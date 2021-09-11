@@ -23,20 +23,13 @@ long long merge(vector<long long int> &arr,long long int left,long long int righ
             j++;
             
         }
-        else if(arr[i]<arr[j]){
+        else if(arr[i]<=arr[j]){
 
             temp[k++]=arr[i];
             i++;
 
         }
-        else{
-
-                
-            temp[k++]=arr[i];
-            temp[k++]=arr[j];          
-            i++;
-            j++;
-        }
+        
     }
 
     while(i<=mid)
